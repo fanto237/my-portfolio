@@ -2,6 +2,7 @@ import CompetencesView from '@/views/CompetencesView.vue'
 import ContactView from '@/views/ContactView.vue'
 import CvView from '@/views/CvView.vue'
 import HomeView from '@/views/HomeView.vue'
+import NotFoundView from '@/views/NotFoundView.vue'
 import ParcoursView from '@/views/ParcoursView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
@@ -43,6 +44,11 @@ const router = createRouter({
       path: '/competences',
       name: 'Competences',
       component: CompetencesView,
+    },
+    {
+      path: '/:catchAll(.*)',
+      name: 'notFound',
+      component: NotFoundView,
     },
   ],
 })

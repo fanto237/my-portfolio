@@ -12,7 +12,7 @@ const { t } = useI18n()
         <p p v-html="t('footer.copyright', { year })"></p>
         <div class="social-links">
           <a
-            href="https://github.com/htsago"
+            href="https://github.com/fanto237"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -20,7 +20,7 @@ const { t } = useI18n()
             <i class="pi pi-github" style="font-size: 1.5rem"></i>
           </a>
           <a
-            href="https://www.linkedin.com/in/herman-tsago-373bb7236/"
+            href="https://www.linkedin.com/in/siani-lucien-leroy-7443a7205/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
