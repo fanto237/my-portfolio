@@ -1,0 +1,127 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - release
+  pull_request:
+    branches:
+      - release
+    types:
+      - closed
+
+env:
+  PROJECT_NAME: my-portfolio
+
+jobs:
+  deploy:
+    name: Deploy Vue App
+    runs-on: ubuntu-latest
+
+    # Only run on merged PRs or direct pushes to release branch
+    if: github.event_name == 'push' || (github.event.pull_request.merged == true)
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build application
+        run: npm run build
+
+      - name: Create deployment package
+        run: |
+          tar -czf deploy.tar.gz \
+            Dockerfile \
+            docker-compose.yml \
+            dist/ \
+            package.json \
+            package-lock.json
+
+      - name: Deploy to server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          port: ${{ secrets.SERVER_PORT || 22 }}
+          script_stop: true
+          script: |
+            # Create deployment directory
+            mkdir -p ~/deployments/${{ env.PROJECT_NAME }}
+            cd ~/deployments/${{ env.PROJECT_NAME }}
+
+            # Stop existing containers
+            docker-compose down || true
+
+            # Clean up old images
+            docker image prune -f
+
+            # Download and extract deployment package
+            echo "Deployment started at $(date)"
+
+      - name: Copy files to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          port: ${{ secrets.SERVER_PORT || 22 }}
+          source: "deploy.tar.gz"
+          target: "~/deployments/${{ env.PROJECT_NAME }}/"
+
+      - name: Extract and deploy
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          port: ${{ secrets.SERVER_PORT || 22 }}
+          script_stop: true
+          script: |
+            cd ~/deployments/${{ env.PROJECT_NAME }}
+
+            # Extract deployment package
+            tar -xzf deploy.tar.gz
+            rm deploy.tar.gz
+
+            # Build and start containers
+            docker-compose build --no-cache
+            docker-compose up -d
+
+            # Verify deployment
+            sleep 10
+            if docker-compose ps | grep -q "Up"; then
+              echo "✅ Deployment successful!"
+              echo "Application is running at: http://${{ secrets.SERVER_HOST }}:8080"
+            else
+              echo "❌ Deployment failed!"
+              docker-compose logs
+              exit 1
+            fi
+
+            # Clean up old images and containers
+            docker system prune -f
+
+            echo "Deployment completed at $(date)"
+
+      - name: Notify deployment status
+        if: always()
+        run: |
+          if [ "${{ job.status }}" == "success" ]; then
+            echo "🚀 Deployment completed successfully!"
+          else
+            echo "💥 Deployment failed!"
+            exit 1
+          fi
