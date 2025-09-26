@@ -64,8 +64,9 @@ jobs:
             docker-compose.yml \
             dist/ \
             package.json \
-            package-lock.json
-
+            package-lock.json \
+            tsconfig*.json \
+            vite.config.ts
       - name: Deploy to server
         uses: appleboy/ssh-action@v1.0.3
         with:
