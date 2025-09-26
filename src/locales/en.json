@@ -9,7 +9,7 @@
   },
   "home": {
     "title": "Lucien Siani",
-    "subtitle": "C# Fullstack Software Developer",
+    "subtitle": "C# Fullstack Software Developer and Homelaber",
     "attention_quote": "Attention Is All You Need",
     "attention_author": "— Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin",
     "cta_projects": "My Projects",
@@ -129,12 +129,7 @@
       },
       {
         "title": "Languages",
-        "skills": [
-          "German (Professional)",
-          "French (Professional)",
-          "Yemba (Professional)",
-          "English (Limited)"
-        ]
+        "skills": ["German (Professional)", "French (motherlanguage)", "English (Professional)"]
       },
       { "title": "Others", "skills": ["LaTeX", "Scrum", "Agile Methods"] }
     ]
@@ -149,6 +144,10 @@
     "linkedin": "LinkedIn"
   },
   "footer": {
-    "copyright": "© {year} Herman Tsago - All rights reserved"
+    "copyright": "© {year} - All rights reserved"
+  },
+  "404": {
+    "not_exist": "This page does not exist",
+    "go_back": "Go Back"
   }
 }
