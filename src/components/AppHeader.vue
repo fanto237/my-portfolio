@@ -2,11 +2,15 @@
 import logo from '@/assets/logo.png'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRoute } from 'vue-router'
 
 const { locale, t } = useI18n()
 const setLocale = (lang: string) => {
   locale.value = lang
+}
+const isActive = (path: string) => {
+  const route = useRoute()
+  return path === route.path ? 'isActive' : ''
 }
 
 const menuOpen = ref(false)
@@ -23,11 +27,21 @@ const closeMenu = () => (menuOpen.value = false)
         </RouterLink>
       </div>
       <nav :class="{ open: menuOpen }">
-        <RouterLink to="/" @click="closeMenu">{{ t('header.home') }}</RouterLink>
-        <RouterLink to="/parcours" @click="closeMenu">{{ t('header.parcours') }}</RouterLink>
-        <RouterLink to="/projets" @click="closeMenu">{{ t('header.projects') }}</RouterLink>
-        <RouterLink to="/competences" @click="closeMenu">{{ t('header.skills') }}</RouterLink>
-        <RouterLink to="/contact" @click="closeMenu">{{ t('header.contact') }}</RouterLink>
+        <RouterLink :class="isActive('/')" to="/" @click="closeMenu">{{
+          t('header.home')
+        }}</RouterLink>
+        <!-- <RouterLink :class="isActive('/parcours')" to="/parcours" @click="closeMenu">{{
+          t('header.parcours')
+        }}</RouterLink>
+        <RouterLink :class="isActive('/projects')" to="/projects" @click="closeMenu">{{
+          t('header.projects')
+        }}</RouterLink>
+        <RouterLink :class="isActive('/competences')" to="/competences" @click="closeMenu">{{
+          t('header.skills')
+        }}</RouterLink> -->
+        <RouterLink :class="isActive('/contact')" to="/contact" @click="closeMenu">{{
+          t('header.contact')
+        }}</RouterLink>
         <a href="/cv.pdf" target="_blank" @click="closeMenu">{{ t('header.cv') }}</a>
         <div class="actions-mobile">
           <div class="lang-switcher">
@@ -88,6 +102,8 @@ const closeMenu = () => (menuOpen.value = false)
   width: 8rem;
   height: 8rem;
   margin-top: 0.7rem;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(89%) saturate(1773%) hue-rotate(204deg)
+    brightness(97%) contrast(101%);
 }
 
 nav {
@@ -101,13 +117,20 @@ nav a {
   text-decoration: none;
   font-weight: 500;
   position: relative;
-  padding: 0.5rem 0;
-  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
-nav a:hover,
-nav a.RouterLink-exact-active {
+nav a:hover {
   color: var(--color-heading);
+  /* background-color: var(--primary-color); */
+  background-color: rgba(0, 113, 227, 0.1);
+}
+
+nav a.isActive {
+  color: white;
+  background-color: #0071e3;
 }
 
 .actions {
