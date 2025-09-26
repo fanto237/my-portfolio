@@ -1,43 +1,46 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
 // Page Contact
+const { t } = useI18n()
 </script>
 
 <template>
   <section class="contact">
     <div class="container">
-      <h2>{{ $t('contact.title') }}</h2>
+      <h2>{{ t('contact.title') }}</h2>
       <p class="section-subtitle">
-        {{ $t('contact.subtitle') }}
+        {{ t('contact.subtitle') }}
       </p>
       <div class="contact-card">
         <div class="contact-info">
           <div class="info-item">
-            <strong>{{ $t('contact.name_label') }}:</strong>
-            <span>Herman Tsago</span>
+            <strong>{{ t('contact.name_label') }}:</strong>
+            <span>Lucien Siani</span>
           </div>
           <div class="info-item">
-            <strong>{{ $t('contact.location_label') }}:</strong>
+            <strong>{{ t('contact.location_label') }}:</strong>
             <span>Bremerhaven, Bremen, Germany</span>
           </div>
           <div class="info-item">
-            <strong>{{ $t('contact.email_label') }}:</strong>
-            <a href="mailto:hermantsago67@gmail.com">hermantsago67@gmail.com</a>
+            <strong>{{ t('contact.email_label') }}:</strong>
+            <a href="mailto:lucien@fanto.dev">lucien@fanto.dev</a>
           </div>
         </div>
         <div class="contact-socials">
           <a
-            href="https://github.com/htsago"
+            href="https://github.com/fanto237"
             target="_blank"
             rel="noopener noreferrer"
             class="social-link"
-            >{{ $t('contact.github') }}</a
+            >{{ t('contact.github') }}</a
           >
           <a
-            href="https://www.linkedin.com/in/herman-tsago-373bb7236/"
+            href="https://www.linkedin.com/in/siani-lucien-leroy-7443a7205/"
             target="_blank"
             rel="noopener noreferrer"
             class="social-link"
-            >{{ $t('contact.linkedin') }}</a
+            >{{ t('contact.linkedin') }}</a
           >
         </div>
       </div>

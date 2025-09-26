@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import photo from '@/assets/photo.png'
 import { useScrollAnimation } from '@/composables/useScrollAnimation'
-
 useScrollAnimation()
 </script>
 
@@ -9,8 +9,7 @@ useScrollAnimation()
     <section class="hero">
       <div class="hero-image">
         <div class="image-wrapper">
-          <!-- TODO ajouter la bonne image -->
-          <img src="" alt="Photo de Herman Tsago" />
+          <img :src="photo" alt="Photo Dark Hacker" />
         </div>
       </div>
       <div class="hero-text">
