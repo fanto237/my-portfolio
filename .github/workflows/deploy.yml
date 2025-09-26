@@ -81,7 +81,7 @@ jobs:
             cd ~/deployments/${{ env.PROJECT_NAME }}
 
             # Stop existing containers
-            docker-compose down || true
+            docker compose down || true
 
             # Clean up old images
             docker image prune -f
@@ -117,17 +117,17 @@ jobs:
             rm deploy.tar.gz
 
             # Build and start containers
-            docker-compose build --no-cache
-            docker-compose up -d
+            docker compose build --no-cache
+            docker compose up -d
 
             # Verify deployment
             sleep 10
-            if docker-compose ps | grep -q "Up"; then
+            if docker compose ps | grep -q "Up"; then
               echo "✅ Deployment successful!"
               echo "Application is running at: http://${{ secrets.SERVER_HOST }}:8080"
             else
               echo "❌ Deployment failed!"
-              docker-compose logs
+              docker compose logs
               exit 1
             fi
 
