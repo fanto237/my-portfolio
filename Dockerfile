@@ -1,30 +1,8 @@
-# Multi-stage build for Vue.js + Vite application
+# Production-ready Dockerfile for pre-built Vue.js application
+FROM nginx:1.29.1-alpine-slim
 
-# Stage 1: Build stage
-FROM node:alpine AS build-stage
-
-# Set working directory
-WORKDIR /app
-
-# Copy package files
-COPY package*.json ./
-
-# Install dependencies
-RUN npm ci --only=production=false
-
-# Copy source code
-COPY . .
-
-RUN ls *
-
-# Build the application
-RUN npm run build
-
-# Stage 2: Production stage
-FROM nginx:1.29.1-alpine-slim AS production-stage
-
-# Copy built assets from build stage
-COPY --from=build-stage /app/dist /usr/share/nginx/html
+# Copy pre-built static files directly to nginx html directory
+COPY dist/ /usr/share/nginx/html
 
 # Copy custom nginx config (optional)
 # COPY nginx.conf /etc/nginx/nginx.conf
