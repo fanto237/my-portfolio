@@ -34,6 +34,7 @@ jobs:
         run: npm run lint
 
   deploy:
+    needs: test
     name: Deploy  App
     runs-on: ubuntu-latest
 
