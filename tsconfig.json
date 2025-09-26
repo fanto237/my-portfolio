@@ -1,4 +1,9 @@
 {
+  "compilerOptions": {
+    "strict": true,
+    "target": "es6",
+    "forceConsistentCasingInFileNames": true
+  },
   "files": [],
   "references": [
     {
