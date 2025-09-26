@@ -1,8 +1,13 @@
+import CompetencesView from '@/views/CompetencesView.vue'
+import ContactView from '@/views/ContactView.vue'
+import CvView from '@/views/CvView.vue'
+import HomeView from '@/views/HomeView.vue'
+import ParcoursView from '@/views/ParcoursView.vue'
+import ProjectsView from '@/views/ProjectsView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
@@ -10,12 +15,34 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
+      path: '/parcours',
+      name: 'parcours',
+      component: ParcoursView,
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: ContactView,
+    },
+    {
+      path: '/projects',
+      name: 'Projects',
+      component: ProjectsView,
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: ContactView,
+    },
+    {
+      path: '/cv',
+      name: 'cv',
+      component: CvView,
+    },
+    {
+      path: '/competences',
+      name: 'Competences',
+      component: CompetencesView,
     },
   ],
 })

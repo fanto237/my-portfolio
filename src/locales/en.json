@@ -1,0 +1,154 @@
+{
+  "header": {
+    "home": "Home",
+    "parcours": "Journey",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "cv": "CV"
+  },
+  "home": {
+    "title": "Lucien Siani",
+    "subtitle": "C# Fullstack Software Developer",
+    "attention_quote": "Attention Is All You Need",
+    "attention_author": "— Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin",
+    "cta_projects": "My Projects",
+    "cta_contact": "Contact Me"
+  },
+  "parcours": {
+    "title": "My Professional Journey",
+    "subtitle": "An overview of my experiences, from Machine Learning engineering to Python development.",
+    "formation_title": "Education",
+    "bachelor": "Bachelor of Science, Business Informatics",
+    "university": "Hochschule Bremerhaven",
+    "date_bachelor": "Oct 2020 – 2025 (expected)",
+    "experiences": [
+      {
+        "title": "Bachelor Thesis / ML Engineer LLM",
+        "company": "Dataport AöR · Altenholz",
+        "date": "Jan 2025 – Present",
+        "missions": ["Support in projects related to Conversational AI and their implementation."]
+      },
+      {
+        "title": "Working Student Python Developer",
+        "company": "hmmh AG · Bremen",
+        "date": "Oct 2023 – Dec 2024",
+        "missions": ["Development of PoCs and MVPs in the field of Generative AI and chatbots."]
+      },
+      {
+        "title": "Intern (Machine Learning)",
+        "company": "Pumacy Technologies AG · Bremen",
+        "date": "May 2023 – Sep 2023",
+        "missions": [
+          "Real-time data extraction from wearable sensors.",
+          "Movement data analysis for activity classification.",
+          "Development of an ML model for activity prediction (lifting, painting)."
+        ]
+      },
+      {
+        "title": "Working Student",
+        "company": "BIBA GmbH · Bremen",
+        "date": "Apr 2023 – Sep 2023",
+        "missions": [
+          "Creation of technical documentation for Computer Vision with Jetson Nano.",
+          "Development of a Python script for distance detection with YOLOv8."
+        ]
+      },
+      {
+        "title": "Production Operator",
+        "company": "Mercedes-Benz AG · Bremen",
+        "date": "Oct 2022",
+        "missions": ["Manufacturing of pedal systems and assembly of body parts."]
+      }
+    ]
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Here is a selection of projects that illustrate my skills and interest in AI and development.",
+    "live_demo": "Live Demo",
+    "github": "GitHub",
+    "project_list": [
+      {
+        "title": "Paiya.ia",
+        "desc": "Development of a personal AI assistant, focused on natural language processing and task automation.",
+        "stack": "Python, LangChain, LLMs"
+      },
+      {
+        "title": "langchain-chainlit",
+        "desc": "A conversational AI application using LangChain and Chainlit to create intelligent chat interfaces.",
+        "stack": "Python, LangChain, Chainlit, LLMs"
+      },
+      {
+        "title": "Spam-Klassifizierung",
+        "desc": "Email classification (spam/ham) with Scikit-learn, a classic in Machine Learning.",
+        "stack": "Python, Scikit-learn"
+      },
+      {
+        "title": "Sensorprobe",
+        "desc": "Analysis and visualization of sensor data, a key step before ML modeling.",
+        "stack": "Python, Jupyter"
+      },
+      {
+        "title": "luciabot",
+        "desc": "A simple chatbot, an exploration project of conversational interfaces.",
+        "stack": "HTML, JavaScript, LLMs, LangChain"
+      },
+      {
+        "title": "IT-Sicherheit",
+        "desc": "Projects and exercises related to IT security.",
+        "stack": "Python"
+      }
+    ]
+  },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "Here are the technologies and tools I master, acquired through my training and projects.",
+    "categories": [
+      {
+        "title": "Languages & Frameworks",
+        "skills": ["Python", "Java", "PHP", "JavaScript", "HTML5 & CSS3"]
+      },
+      {
+        "title": "AI & Machine Learning",
+        "skills": ["LangChain", "GPT", "Scikit-learn", "TensorFlow", "PyTorch"]
+      },
+      {
+        "title": "Tools & DevOps",
+        "skills": ["Docker", "Git & GitHub", "GitLab", "LLMOps", "Jira"]
+      },
+      {
+        "title": "Certifications",
+        "skills": [
+          "Machine Learning Grundlagen",
+          "TensorFlow Grundkurs 2",
+          "Python für die Datenanalyse 1",
+          "Deep Learning: Grundlagen",
+          "ChatGPT Prompt Engineering",
+          "LangChain LLM Applications"
+        ]
+      },
+      {
+        "title": "Languages",
+        "skills": [
+          "German (Professional)",
+          "French (Professional)",
+          "Yemba (Professional)",
+          "English (Limited)"
+        ]
+      },
+      { "title": "Others", "skills": ["LaTeX", "Scrum", "Agile Methods"] }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "I am open to new opportunities and collaborations. Do not hesitate to contact me.",
+    "name_label": "Name",
+    "location_label": "Location",
+    "email_label": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "copyright": "© {year} Herman Tsago - All rights reserved"
+  }
+}

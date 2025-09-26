@@ -1,0 +1,160 @@
+{
+  "header": {
+    "home": "Startseite",
+    "parcours": "Werdegang",
+    "projects": "Projekte",
+    "skills": "Kompetenzen",
+    "contact": "Kontakt",
+    "cv": "Lebenslauf"
+  },
+  "home": {
+    "title": "Lucien Siani",
+    "subtitle": "C# Fullstack Software Entwickler",
+    "attention_quote": "Attention Is All You Need",
+    "attention_author": "— Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser und Illia Polosukhin",
+    "cta_projects": "Meine Projekte",
+    "cta_contact": "Kontaktieren Sie mich"
+  },
+  "philosophy": {
+    "title": "Meine Philosophie",
+    "quote": "\"Aufbauend auf den Grundlagen, die von Vaswani, Shazeer, Parmar und ihren Kollegen gelegt wurden, zielt meine Arbeit darauf ab, das volle Potenzial von Aufmerksamkeitsmechanismen zu erforschen. Ich glaube, dass wir durch die Konzentration auf elegante, skalierbare und leistungsstarke Architekturen KI-Systeme schaffen können, die nicht nur komplexe Probleme lösen, sondern auch die Grenzen der digitalen Intelligenz neu definieren.\""
+  },
+  "parcours": {
+    "title": "Mein beruflicher Werdegang",
+    "subtitle": "Ein Überblick über meine Erfahrungen, von der Machine-Learning-Entwicklung bis zur Python-Entwicklung.",
+    "formation_title": "Ausbildung",
+    "bachelor": "Bachelor of Science, Wirtschaftsinformatik",
+    "university": "Hochschule Bremerhaven",
+    "date_bachelor": "Okt. 2020 – 2025 (voraussichtlich)",
+    "experiences": [
+      {
+        "title": "Bachelorarbeit / ML Engineer LLM",
+        "company": "Dataport AöR · Altenholz",
+        "date": "Jan. 2025 – Heute",
+        "missions": [
+          "Unterstützung bei Projekten im Bereich Conversational AI und deren Umsetzung."
+        ]
+      },
+      {
+        "title": "Werkstudent Python Developer",
+        "company": "hmmh AG · Bremen",
+        "date": "Okt. 2023 – Dez. 2024",
+        "missions": ["Entwicklung von PoCs und MVPs im Bereich Generative KI und Chatbots."]
+      },
+      {
+        "title": "Praktikant (Machine Learning)",
+        "company": "Pumacy Technologies AG · Bremen",
+        "date": "Mai 2023 – Sep. 2023",
+        "missions": [
+          "Echtzeit-Datenextraktion aus tragbaren Sensoren.",
+          "Bewegungsdatenanalyse zur Aktivitätsklassifizierung.",
+          "Entwicklung eines ML-Modells zur Vorhersage von Aktivitäten (Heben, Malen)."
+        ]
+      },
+      {
+        "title": "Werkstudent",
+        "company": "BIBA GmbH · Bremen",
+        "date": "Apr. 2023 – Sep. 2023",
+        "missions": [
+          "Erstellung technischer Dokumentationen für Computer Vision mit Jetson Nano.",
+          "Entwicklung eines Python-Skripts zur Abstandserkennung mit YOLOv8."
+        ]
+      },
+      {
+        "title": "Produktionsmitarbeiter",
+        "company": "Mercedes-Benz AG · Bremen",
+        "date": "Okt. 2022",
+        "missions": ["Herstellung von Pedalanlagen und Montage von Karosserieteilen."]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Meine Projekte",
+    "subtitle": "Hier ist eine Auswahl von Projekten, die meine Fähigkeiten und mein Interesse an KI und Entwicklung veranschaulichen.",
+    "live_demo": "Live-Demo",
+    "github": "GitHub",
+    "project_list": [
+      {
+        "title": "Paiya.ia",
+        "desc": "Entwicklung eines persönlichen KI-Assistenten mit Schwerpunkt auf natürlicher Sprachverarbeitung und Aufgabenautomatisierung.",
+        "stack": "Python, KI, NLP"
+      },
+      {
+        "title": "langchain-chainlit",
+        "desc": "Eine konversationelle KI-Anwendung, die LangChain und Chainlit verwendet, um intelligente Chat-Schnittstellen zu erstellen.",
+        "stack": "Python, LangChain, Chainlit"
+      },
+      {
+        "title": "Spam-Klassifizierung",
+        "desc": "E-Mail-Klassifizierung (Spam/Ham) mit Scikit-learn, ein Klassiker im Machine Learning.",
+        "stack": "Python, Scikit-learn"
+      },
+      {
+        "title": "Sensorprobe",
+        "desc": "Analyse und Visualisierung von Sensordaten, ein wichtiger Schritt vor der ML-Modellierung.",
+        "stack": "Python, Jupyter"
+      },
+      {
+        "title": "luciabot",
+        "desc": "Ein einfacher Chatbot, ein Erkundungsprojekt für Konversationsschnittstellen.",
+        "stack": "HTML, JavaScript"
+      },
+      {
+        "title": "IT-Sicherheit",
+        "desc": "Projekte und Übungen zur IT-Sicherheit.",
+        "stack": "Python"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Meine Kompetenzen",
+    "subtitle": "Hier sind die Technologien und Werkzeuge, die ich beherrsche und durch Ausbildung und Projekte erworben habe.",
+    "categories": [
+      {
+        "title": "Sprachen & Frameworks",
+        "skills": ["Python", "Java", "PHP", "JavaScript", "HTML5 & CSS3"]
+      },
+      {
+        "title": "KI & Machine Learning",
+        "skills": ["LangChain", "GPT", "Scikit-learn", "TensorFlow", "PyTorch"]
+      },
+      {
+        "title": "Tools & DevOps",
+        "skills": ["Docker", "Git & GitHub", "GitLab", "LLMOps", "Jira"]
+      },
+      {
+        "title": "Zertifizierungen",
+        "skills": [
+          "Machine Learning Grundlagen",
+          "TensorFlow Grundkurs 2",
+          "Python für die Datenanalyse 1",
+          "Deep Learning: Grundlagen",
+          "ChatGPT Prompt Engineering",
+          "LangChain LLM Applications"
+        ]
+      },
+      {
+        "title": "Sprachen",
+        "skills": [
+          "Deutsch (Professionell)",
+          "Französisch (Professionell)",
+          "Yemba (Professionell)",
+          "Englisch (Eingeschränkt)"
+        ]
+      },
+      { "title": "Sonstiges", "skills": ["LaTeX", "Scrum", "Agile Methoden"] }
+    ]
+  },
+  "contact": {
+    "title": "Kontaktieren Sie mich",
+    "subtitle": "Ich bin offen für neue Möglichkeiten und Kooperationen. Zögern Sie nicht, mich zu kontaktieren.",
+    "name_label": "Name",
+    "location_label": "Standort",
+    "email_label": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "copyright": "© {year} Herman Tsago - Alle Rechte vorbehalten"
+  }
+}
