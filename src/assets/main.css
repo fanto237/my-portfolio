@@ -1,13 +1,44 @@
 @import './base.css';
+@import 'primeicons/primeicons.css';
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
   font-weight: normal;
 }
 
-a,
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--primary-color-dark);
+  }
+}
+
+@media (max-width: 1023px) {
+  #app {
+    padding: 1rem;
+  }
+}
+
+/* Mobile-first responsive design */
+@media (min-width: 640px) {
+  #app {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #app {
+    padding: 2rem;
+  }
+}
+
 .green {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
@@ -15,9 +46,22 @@ a,
   padding: 3px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+/* Enhanced responsive breakpoints */
+@media (min-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
   }
 }
 
@@ -31,5 +75,140 @@ a,
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
+  }
+}
+
+/* Advanced mobile-specific adjustments */
+@media (max-width: 639px) {
+  #app {
+    padding: 0.25rem;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  /* Improve touch targets */
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    min-height: 48px;
+    min-width: 48px;
+  }
+
+  /* Better spacing for mobile */
+  * {
+    margin-bottom: 0.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* Enhanced scroll animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.scroll-animate.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Improved utility classes for responsive design */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 3rem;
+  }
+}
+
+/* Advanced responsive grid system */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    gap: 2rem;
+  }
+}
+
+/* Responsive spacing utilities */
+.section-padding {
+  padding: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 3rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 4rem 0;
+  }
+}
+
+/* Mobile performance optimizations */
+@media (max-width: 767px) {
+  /* Reduce animations on mobile for better performance */
+  * {
+    animation-duration: 0.3s !important;
+    transition-duration: 0.3s !important;
+  }
+
+  /* Optimize for mobile scrolling */
+  html {
+    scroll-padding-top: 80px;
+  }
+
+  /* Better mobile typography */
+  p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  /* Improved mobile spacing */
+  .mobile-spacing {
+    margin-bottom: 1.5rem;
   }
 }
