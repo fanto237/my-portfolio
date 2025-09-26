@@ -12,14 +12,14 @@ const projectData = computed(() => {
   const data = tm('projects.project_list')
   const urls = [
     {
-      url: 'https://github.com/htsago/paiya.ia',
+      url: 'https://github.com/fanto237/paiya.ia',
       liveUrl: 'https://it-services-team-paiya.gen-ai.software/',
     },
-    { url: 'https://github.com/htsago/langchain-chainlit' },
-    { url: 'https://github.com/htsago/Spam-Klassifizierung' },
-    { url: 'https://github.com/htsago/Sensorprobe' },
-    { url: 'https://github.com/htsago/luciabot' },
-    { url: 'https://github.com/htsago/IT-sicherheit' },
+    { url: 'https://github.com/fanto237/langchain-chainlit' },
+    { url: 'https://github.com/fanto237/Spam-Klassifizierung' },
+    { url: 'https://github.com/fanto237/Sensorprobe' },
+    { url: 'https://github.com/fanto237/luciabot' },
+    { url: 'https://github.com/fanto237/IT-sicherheit' },
   ]
   if (Array.isArray(data)) {
     return data.map((item, index) => ({ ...item, ...urls[index] }))
