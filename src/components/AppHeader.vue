@@ -42,7 +42,7 @@ const closeMenu = () => (menuOpen.value = false)
         <RouterLink :class="isActive('/contact')" to="/contact" @click="closeMenu">{{
           t('header.contact')
         }}</RouterLink>
-        <a href="/cv.pdf" target="_blank" @click="closeMenu">{{ t('header.cv') }}</a>
+        <a href="/cv.pdf" download target="_blank" @click="closeMenu">{{ t('header.cv') }}</a>
         <div class="actions-mobile">
           <div class="lang-switcher">
             <button @click="setLocale('en')" :class="{ active: locale === 'en' }">EN</button>
