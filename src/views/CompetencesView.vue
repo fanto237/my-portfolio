@@ -24,20 +24,7 @@ const skillCategories = computed(() => {
           <h3>{{ category.title }}</h3>
           <ul>
             <li v-for="skill in category.skills" :key="skill">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="check-icon"
-              >
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
+              <i class="pi pi-check"></i>
               <span>{{ skill }}</span>
             </li>
           </ul>
@@ -77,7 +64,7 @@ h2 {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -116,12 +103,29 @@ h2 {
   height: 20px;
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 767px) {
   .competences {
     padding: 2rem 0;
   }
+
   .container {
     padding: 0 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .skill-category-card {
+    padding: 1.5rem;
   }
 }
 </style>

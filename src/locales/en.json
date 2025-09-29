@@ -1,102 +1,149 @@
 {
   "header": {
     "home": "Home",
-    "parcours": "Journey",
+    "parcours": "Experience",
     "projects": "Projects",
     "skills": "Skills",
     "contact": "Contact",
-    "cv": "CV"
+    "cv": "Resume"
   },
   "home": {
     "title": "Lucien Siani",
-    "subtitle": "C# Fullstack Software Developer and Homelaber",
+    "subtitle": "C# Fullstack Software Developer and Homelabber",
     "attention_quote": "Attention Is All You Need",
-    "attention_author": "— Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin",
+    "attention_author": "— Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser and Illia Polosukhin",
     "cta_projects": "My Projects",
     "cta_contact": "Contact Me"
   },
   "parcours": {
     "title": "My Professional Journey",
-    "subtitle": "An overview of my experiences, from Machine Learning engineering to Python development.",
-    "formation_title": "Education",
-    "bachelor": "Bachelor of Science, Business Informatics",
-    "university": "Hochschule Bremerhaven",
-    "date_bachelor": "Oct 2020 – 2025 (expected)",
+    "subtitle": "An overview of my experiences, from Machine Learning development to Software development.",
     "experiences": [
       {
-        "title": "Bachelor Thesis / ML Engineer LLM",
-        "company": "Dataport AöR · Altenholz",
-        "date": "Jan 2025 – Present",
-        "missions": ["Support in projects related to Conversational AI and their implementation."]
-      },
-      {
-        "title": "Working Student Python Developer",
-        "company": "hmmh AG · Bremen",
-        "date": "Oct 2023 – Dec 2024",
-        "missions": ["Development of PoCs and MVPs in the field of Generative AI and chatbots."]
-      },
-      {
-        "title": "Intern (Machine Learning)",
-        "company": "Pumacy Technologies AG · Bremen",
-        "date": "May 2023 – Sep 2023",
+        "title": "C#/.NET Software Developer",
+        "company": "Adesso SE",
+        "date": "Dec. 2024 – Present",
         "missions": [
-          "Real-time data extraction from wearable sensors.",
-          "Movement data analysis for activity classification.",
-          "Development of an ML model for activity prediction (lifting, painting)."
+          "Development of desktop applications in an agile Scrum-based team",
+          "Implementation of unit tests"
         ]
       },
       {
-        "title": "Working Student",
-        "company": "BIBA GmbH · Bremen",
-        "date": "Apr 2023 – Sep 2023",
+        "title": "Master's Thesis Student",
+        "company": "Adesso SE",
+        "date": "Apr. 2024 – Dec. 2024",
         "missions": [
-          "Creation of technical documentation for Computer Vision with Jetson Nano.",
-          "Development of a Python script for distance detection with YOLOv8."
+          "Topic: Investigation of Docker integration in Jenkins-based CI/CD pipelines - an analysis of impacts on development and deployment processes."
         ]
       },
       {
-        "title": "Production Operator",
-        "company": "Mercedes-Benz AG · Bremen",
-        "date": "Oct 2022",
-        "missions": ["Manufacturing of pedal systems and assembly of body parts."]
+        "title": "Working Student in Software Development with C#/.NET",
+        "company": "Adesso SE",
+        "date": "Jun. 2023 – Apr. 2024",
+        "missions": [
+          "Further development of existing applications",
+          "Porting applications from .NET Framework to .NET Core"
+        ]
+      },
+      {
+        "title": "Working Student as Frontend Software Developer",
+        "company": "Uze Mobility GmbH",
+        "date": "Dec. 2022 – Jun. 2023",
+        "missions": [
+          "Further development of existing Vue.js web applications",
+          "Creation of prototypes and mockups for new websites",
+          "Creation of tasks based on user stories"
+        ]
+      },
+      {
+        "title": "Working Student in Software Development with C#/.NET",
+        "company": "dbh Logistics IT AG",
+        "date": "Jun. 2021 - Dec. 2022",
+        "missions": [
+          "Implementation of unit tests with xUnit Library",
+          "Writing Web API integration tests",
+          "Extension of a WPF application",
+          "Further development of components in a microservice architecture with event-driven communication (MassTransit and RabbitMQ)"
+        ]
+      },
+      {
+        "title": "Working Student in Software Development",
+        "company": "Philotech GmbH",
+        "date": "Jun. 2021 - Dec. 2022",
+        "missions": ["Porting an application from Python 2 and Qt 3 to Python 3 and Qt 5"]
+      },
+      {
+        "title": "Internship in Integration Systems",
+        "company": "Thermo Fisher Scientific Bremen GmbH",
+        "date": "May 2020 - Sept. 2020",
+        "missions": [
+          "Activation of network outlets",
+          "Configuration of switches and servers",
+          "Creation of technical documentation",
+          "Installation of hardware components in proprietary Windows domain"
+        ]
+      },
+      {
+        "title": "Working Student in System Administration/Integration Systems",
+        "company": "Thermo Fisher Scientific Bremen GmbH",
+        "date": "Mar. 2019 - May 2020",
+        "missions": [
+          "Maintenance of printing devices",
+          "First and second level support",
+          "Management of telephone systems",
+          "Management of user permissions with Active Directory",
+          "Support of employees with IT problems"
+        ]
       }
     ]
   },
   "projects": {
     "title": "My Projects",
-    "subtitle": "Here is a selection of projects that illustrate my skills and interest in AI and development.",
+    "subtitle": "Here is a selection of projects that demonstrate my skills and interest in software development.",
     "live_demo": "Live Demo",
     "github": "GitHub",
     "project_list": [
       {
-        "title": "Paiya.ia",
-        "desc": "Development of a personal AI assistant, focused on natural language processing and task automation.",
-        "stack": "Python, LangChain, LLMs"
+        "title": "Homelab (Home Server)",
+        "desc": "Implementation of a home server for hosting personal projects (web server) as well as securing my home network (OpnSense) and virtualization (Proxmox).",
+        "stack": "Docker, Virtualization, Networking",
+        "repo": "https://github.com/fanto237/homelab",
+        "demo": ""
       },
       {
-        "title": "langchain-chainlit",
-        "desc": "A conversational AI application using LangChain and Chainlit to create intelligent chat interfaces.",
-        "stack": "Python, LangChain, Chainlit, LLMs"
+        "title": "Metavision - Image Recognition",
+        "desc": "Development of a web application with microservice architecture for facial recognition using OpenCV, RabbitMQ and ASP.NET Web API",
+        "stack": "ASP.NET, React, PostgreSQL, RabbitMQ",
+        "repo": "https://github.com/fanto237/face-detection-opencv",
+        "demo": "https://metavison.fanto.dev"
       },
       {
-        "title": "Spam-Klassifizierung",
-        "desc": "Email classification (spam/ham) with Scikit-learn, a classic in Machine Learning.",
-        "stack": "Python, Scikit-learn"
+        "title": "Portfolio Website",
+        "desc": "Development of my responsive website using Vue, Docker and GitHub Actions for automatic deployment.",
+        "stack": "Vue, Docker, GitHub Actions",
+        "repo": "https://github.com/fanto237/my-portfolio",
+        "demo": "https://fanto.dev"
       },
       {
-        "title": "Sensorprobe",
-        "desc": "Analysis and visualization of sensor data, a key step before ML modeling.",
-        "stack": "Python, Jupyter"
+        "title": "Task Management",
+        "desc": "Development of a simple task management application based on the LEMP stack",
+        "stack": "JavaScript, PHP, Nginx, MariaDB",
+        "repo": "https://github.com/fanto237/task-management",
+        "demo": "https://task.fanto.dev"
       },
       {
-        "title": "luciabot",
-        "desc": "A simple chatbot, an exploration project of conversational interfaces.",
-        "stack": "HTML, JavaScript, LLMs, LangChain"
+        "title": "Online Quiz with ESP32",
+        "desc": "Development of an online quiz where an ESP32 microcontroller is used as a buzzer. We use WebSocket as well as JavaScript, PHP and Redis for caching",
+        "stack": "JavaScript, PHP, Redis, Arduino",
+        "repo": "https://github.com/fanto237/multichoice-quiz",
+        "demo": ""
       },
       {
-        "title": "IT-Sicherheit",
-        "desc": "Projects and exercises related to IT security.",
-        "stack": "Python"
+        "title": "Online Library",
+        "desc": "Development of a web application (library) using Java Server, Contexts and Dependency Injection, Hibernate and MySQL.",
+        "stack": "Java, Hibernate, MySQL",
+        "repo": "https://github.com/fanto237/subh",
+        "demo": ""
       }
     ]
   },
@@ -105,31 +152,29 @@
     "subtitle": "Here are the technologies and tools I master, acquired through my training and projects.",
     "categories": [
       {
-        "title": "Languages & Frameworks",
-        "skills": ["Python", "Java", "PHP", "JavaScript", "HTML5 & CSS3"]
+        "title": "Programming Languages",
+        "skills": ["C#/.NET", "Javascript/TypeScript", "HTML5 & CSS3"]
       },
+      {
+        "title": "Frameworks",
+        "skills": ["React", "Vue.js", "Angular", "ASP.NET", "Blazor", "WPF"]
+      },
+      {
+        "title": "Databases and Caching",
+        "skills": ["Redis", "PostgreSQL", "MySQL", "SQL Server"]
+      },
+      { "title": "Version Control", "skills": ["Git", "GitHub", "GitLab", "Azure DevOps"] },
       {
         "title": "AI & Machine Learning",
-        "skills": ["LangChain", "GPT", "Scikit-learn", "TensorFlow", "PyTorch"]
+        "skills": ["GPT", "TensorFlow", "PyTorch"]
       },
       {
-        "title": "Tools & DevOps",
-        "skills": ["Docker", "Git & GitHub", "GitLab", "LLMOps", "Jira"]
-      },
-      {
-        "title": "Certifications",
-        "skills": [
-          "Machine Learning Grundlagen",
-          "TensorFlow Grundkurs 2",
-          "Python für die Datenanalyse 1",
-          "Deep Learning: Grundlagen",
-          "ChatGPT Prompt Engineering",
-          "LangChain LLM Applications"
-        ]
+        "title": "CI/CD Pipelines & DevOps",
+        "skills": ["Azure DevOps", "GitHub Actions", "Jenkins", "Docker"]
       },
       {
         "title": "Languages",
-        "skills": ["German (Professional)", "French (motherlanguage)", "English (Professional)"]
+        "skills": ["German (Professional)", "French (Native)", "English (Professional)"]
       },
       { "title": "Others", "skills": ["LaTeX", "Scrum", "Agile Methods"] }
     ]

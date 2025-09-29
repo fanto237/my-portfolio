@@ -5,34 +5,19 @@ import { useI18n } from 'vue-i18n'
 import ProjectCard from '../components/ProjectCard.vue'
 
 useScrollAnimation()
-const { tm } = useI18n()
+const { tm, t } = useI18n()
 
-// We keep the original project data for non-translatable fields like URLs
 const projectData = computed(() => {
   const data = tm('projects.project_list')
-  const urls = [
-    {
-      url: 'https://github.com/fanto237/paiya.ia',
-      liveUrl: 'https://it-services-team-paiya.gen-ai.software/',
-    },
-    { url: 'https://github.com/fanto237/langchain-chainlit' },
-    { url: 'https://github.com/fanto237/Spam-Klassifizierung' },
-    { url: 'https://github.com/fanto237/Sensorprobe' },
-    { url: 'https://github.com/fanto237/luciabot' },
-    { url: 'https://github.com/fanto237/IT-sicherheit' },
-  ]
-  if (Array.isArray(data)) {
-    return data.map((item, index) => ({ ...item, ...urls[index] }))
-  }
-  return []
+  return Array.isArray(data) ? data : []
 })
 </script>
 
 <template>
   <section class="projets">
     <div class="container">
-      <h2 class="scroll-animate">{{ $t('projects.title') }}</h2>
-      <p class="section-subtitle scroll-animate">{{ $t('projects.subtitle') }}</p>
+      <h2 class="scroll-animate">{{ t('projects.title') }}</h2>
+      <p class="section-subtitle scroll-animate">{{ t('projects.subtitle') }}</p>
       <div v-if="projectData.length" class="projects-list scroll-animate">
         <ProjectCard v-for="(project, i) in projectData" :key="i" :project="project" />
       </div>

@@ -30,7 +30,7 @@ const closeMenu = () => (menuOpen.value = false)
         <RouterLink :class="isActive('/')" to="/" @click="closeMenu">{{
           t('header.home')
         }}</RouterLink>
-        <!-- <RouterLink :class="isActive('/parcours')" to="/parcours" @click="closeMenu">{{
+        <RouterLink :class="isActive('/parcours')" to="/parcours" @click="closeMenu">{{
           t('header.parcours')
         }}</RouterLink>
         <RouterLink :class="isActive('/projects')" to="/projects" @click="closeMenu">{{
@@ -38,11 +38,11 @@ const closeMenu = () => (menuOpen.value = false)
         }}</RouterLink>
         <RouterLink :class="isActive('/competences')" to="/competences" @click="closeMenu">{{
           t('header.skills')
-        }}</RouterLink> -->
+        }}</RouterLink>
         <RouterLink :class="isActive('/contact')" to="/contact" @click="closeMenu">{{
           t('header.contact')
         }}</RouterLink>
-        <a href="/cv.pdf" download target="_blank" @click="closeMenu">{{ t('header.cv') }}</a>
+        <a href="/cv.pdf" target="_blank" @click="closeMenu">{{ t('header.cv') }}</a>
         <div class="actions-mobile">
           <div class="lang-switcher">
             <button @click="setLocale('en')" :class="{ active: locale === 'en' }">EN</button>
