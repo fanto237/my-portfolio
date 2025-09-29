@@ -3,7 +3,7 @@ import { useScrollAnimation } from '@/composables/useScrollAnimation'
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-const { tm } = useI18n()
+const { tm, t } = useI18n()
 useScrollAnimation()
 
 const experiences = computed(() => {
@@ -15,9 +15,9 @@ const experiences = computed(() => {
 <template>
   <section class="parcours">
     <div class="container">
-      <h2 class="scroll-animate">{{ $t('parcours.title') }}</h2>
+      <h2 class="scroll-animate">{{ t('parcours.title') }}</h2>
       <p class="section-subtitle scroll-animate">
-        {{ $t('parcours.subtitle') }}
+        {{ t('parcours.subtitle') }}
       </p>
 
       <div class="timeline">
@@ -33,18 +33,6 @@ const experiences = computed(() => {
             <ul>
               <li v-for="item in exp.missions" :key="item">{{ item }}</li>
             </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item scroll-animate">
-          <div class="timeline-content">
-            <h3>{{ $t('parcours.formation_title') }}</h3>
-            <div class="formation-item">
-              <h4>{{ $t('parcours.bachelor') }}</h4>
-              <div class="formation-location">
-                {{ $t('parcours.university') }} · <span>{{ $t('parcours.date_bachelor') }}</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
