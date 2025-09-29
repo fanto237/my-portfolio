@@ -9,100 +9,139 @@
   },
   "home": {
     "title": "Lucien Siani",
-    "subtitle": "C# Fullstack Software Entwickler und Homelaber",
-    "attention_quote": "Attention Is All You Need",
-    "attention_author": "— Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser und Illia Polosukhin",
+    "subtitle": "C# Fullstack Software-Entwickler und Homelabber",
     "cta_projects": "Meine Projekte",
     "cta_contact": "Kontaktieren Sie mich"
   },
-  "philosophy": {
-    "title": "Meine Philosophie",
-    "quote": "\"Aufbauend auf den Grundlagen, die von Vaswani, Shazeer, Parmar und ihren Kollegen gelegt wurden, zielt meine Arbeit darauf ab, das volle Potenzial von Aufmerksamkeitsmechanismen zu erforschen. Ich glaube, dass wir durch die Konzentration auf elegante, skalierbare und leistungsstarke Architekturen KI-Systeme schaffen können, die nicht nur komplexe Probleme lösen, sondern auch die Grenzen der digitalen Intelligenz neu definieren.\""
-  },
   "parcours": {
     "title": "Mein beruflicher Werdegang",
-    "subtitle": "Ein Überblick über meine Erfahrungen, von der Machine-Learning-Entwicklung bis zur Python-Entwicklung.",
-    "formation_title": "Ausbildung",
-    "bachelor": "Bachelor of Science, Wirtschaftsinformatik",
-    "university": "Hochschule Bremerhaven",
-    "date_bachelor": "Okt. 2020 – 2025 (voraussichtlich)",
+    "subtitle": "Ein Überblick über meine Erfahrungen, von Machine-Learning-Entwicklung bis zur Software-Entwicklung.",
     "experiences": [
       {
-        "title": "Bachelorarbeit / ML Engineer LLM",
-        "company": "Dataport AöR · Altenholz",
-        "date": "Jan. 2025 – Heute",
+        "title": "C#/.Net Software-Entwickler",
+        "company": "Adesso SE",
+        "date": "Dez. 2024 – Heute",
         "missions": [
-          "Unterstützung bei Projekten im Bereich Conversational AI und deren Umsetzung."
+          "Weiterentwicklung von Desktop-Anwendungen in einem agilen Team auf Scrum-Basis",
+          "Implementierung von Unit-Tests"
         ]
       },
       {
-        "title": "Werkstudent Python Developer",
-        "company": "hmmh AG · Bremen",
-        "date": "Okt. 2023 – Dez. 2024",
-        "missions": ["Entwicklung von PoCs und MVPs im Bereich Generative KI und Chatbots."]
-      },
-      {
-        "title": "Praktikant (Machine Learning)",
-        "company": "Pumacy Technologies AG · Bremen",
-        "date": "Mai 2023 – Sep. 2023",
+        "title": "Masterand",
+        "company": "Adesso SE",
+        "date": "Apr. 2024 – Dez. 2024",
         "missions": [
-          "Echtzeit-Datenextraktion aus tragbaren Sensoren.",
-          "Bewegungsdatenanalyse zur Aktivitätsklassifizierung.",
-          "Entwicklung eines ML-Modells zur Vorhersage von Aktivitäten (Heben, Malen)."
+          "Thema: Untersuchung über die Integration von Docker in Jenkins-basierte CI/CD-Pipelines - eine Analyse der Auswirkungen auf Entwicklungs- und Bereitstellungsprozesse."
         ]
       },
       {
-        "title": "Werkstudent",
-        "company": "BIBA GmbH · Bremen",
-        "date": "Apr. 2023 – Sep. 2023",
+        "title": "Werkstudent im Bereich Software-Entwicklung mit C#/.Net",
+        "company": "Adesso SE",
+        "date": "Jun. 2023 – Apr. 2024",
         "missions": [
-          "Erstellung technischer Dokumentationen für Computer Vision mit Jetson Nano.",
-          "Entwicklung eines Python-Skripts zur Abstandserkennung mit YOLOv8."
+          "Weiterentwicklung bestehender Anwendungen",
+          "Portierung von Anwendungen von .Net Framework auf .Net Core"
         ]
       },
       {
-        "title": "Produktionsmitarbeiter",
-        "company": "Mercedes-Benz AG · Bremen",
-        "date": "Okt. 2022",
-        "missions": ["Herstellung von Pedalanlagen und Montage von Karosserieteilen."]
+        "title": "Werkstudent als Software-Entwickler im Frontend",
+        "company": "Uze Mobility GmbH",
+        "date": "Dez. 2022 – Jun. 2023",
+        "missions": [
+          "Weiterentwicklung bestehender Vue.js-Webanwendungen",
+          "Erstellung von Prototypen sowie Mockups für neue Webseiten",
+          "Erstellung von Aufgaben basierend auf User Stories"
+        ]
+      },
+      {
+        "title": "Werkstudent im Bereich Software-Entwicklung mit C#/.Net",
+        "company": "dbh Logistics IT AG",
+        "date": "Jun. 2021 - Dez. 2022",
+        "missions": [
+          "Implementierung von Unit-Tests mit xUnit Library",
+          "Schreiben von Web-API-Integrationstests",
+          "Erweiterung einer WPF-Anwendung",
+          "Weiterentwicklung von Komponenten in einer Microservice-Architektur mit Event-Driven-Kommunikation (MassTransit und RabbitMQ)"
+        ]
+      },
+      {
+        "title": "Werkstudent im Bereich Software-Entwicklung",
+        "company": "Philotech GmbH",
+        "date": "Jun. 2021 - Dez. 2022",
+        "missions": ["Portierung einer Anwendung von Python 2 und Qt 3 auf Python 3 und Qt 5"]
+      },
+      {
+        "title": "Praktikum im Bereich Integrationssysteme",
+        "company": "Thermo Fisher Scientific Bremen GmbH",
+        "date": "Mai 2020 - Sept. 2020",
+        "missions": [
+          "Freischalten von Internetdosen",
+          "Konfiguration von Switches und Servern",
+          "Erstellung technischer Dokumentation",
+          "Einbau von Hardware-Komponenten in eigener Windows-Domäne"
+        ]
+      },
+      {
+        "title": "Werkstudent im Bereich Systemadministration/Integrationssysteme",
+        "company": "Thermo Fisher Scientific Bremen GmbH",
+        "date": "Mär. 2019 - Mai 2020",
+        "missions": [
+          "Wartung von Druckgeräten",
+          "First- und Second-Level-Support",
+          "Verwaltung von Telefonanlagen",
+          "Verwaltung von Benutzerberechtigungen mit Active Directory",
+          "Betreuung von Mitarbeitern bei IT-Problemen"
+        ]
       }
     ]
   },
   "projects": {
     "title": "Meine Projekte",
-    "subtitle": "Hier ist eine Auswahl von Projekten, die meine Fähigkeiten und mein Interesse an KI und Entwicklung veranschaulichen.",
+    "subtitle": "Hier ist eine Auswahl von Projekten, die meine Fähigkeiten und mein Interesse an Softwareentwicklung veranschaulichen.",
     "live_demo": "Live-Demo",
     "github": "GitHub",
     "project_list": [
       {
-        "title": "Paiya.ia",
-        "desc": "Entwicklung eines persönlichen KI-Assistenten mit Schwerpunkt auf natürlicher Sprachverarbeitung und Aufgabenautomatisierung.",
-        "stack": "Python, KI, NLP"
+        "title": "Homelab (Homeserver)",
+        "desc": "Inbetriebnahme eines Homeservers für das Hosting eigener Projekte (Web Server) sowie die Sicherung meines Heimnetzwerks (OpnSense) und Virtualisierung (Proxmox).",
+        "stack": "Docker, Virtualisierung, Netzwerk",
+        "repo": "https://github.com/fanto237/homelab",
+        "demo": ""
       },
       {
-        "title": "langchain-chainlit",
-        "desc": "Eine konversationelle KI-Anwendung, die LangChain und Chainlit verwendet, um intelligente Chat-Schnittstellen zu erstellen.",
-        "stack": "Python, LangChain, Chainlit"
+        "title": "Metavision - Bilderkennung",
+        "desc": "Entwicklung einer Webanwendung mit Microservice-Architektur zur Gesichtserkennung mit OpenCV, RabbitMQ und ASP.NET Web API",
+        "stack": "ASP.NET, React, PostgreSQL, RabbitMQ",
+        "repo": "https://github.com/fanto237/face-detection-opencv",
+        "demo": "https://metavison.fanto.dev"
       },
       {
-        "title": "Spam-Klassifizierung",
-        "desc": "E-Mail-Klassifizierung (Spam/Ham) mit Scikit-learn, ein Klassiker im Machine Learning.",
-        "stack": "Python, Scikit-learn"
+        "title": "Portfolio Webseite",
+        "desc": "Entwicklung meiner responsive Webseite mithilfe von Vue, Docker und Github Actions für automatische Bereitstellung.",
+        "stack": "Vue, Docker, Github Actions",
+        "repo": "https://github.com/fanto237/my-portfolio",
+        "demo": "https://fanto.dev"
       },
       {
-        "title": "Sensorprobe",
-        "desc": "Analyse und Visualisierung von Sensordaten, ein wichtiger Schritt vor der ML-Modellierung.",
-        "stack": "Python, Jupyter"
+        "title": "Task Management",
+        "desc": "Entwicklung einer einfachen Aufgabenverwaltungs-Anwendung auf Basis des LEMP-Stacks",
+        "stack": "JavaScript, PHP, Nginx, MariaDB",
+        "repo": "https://github.com/fanto237/task-management",
+        "demo": "https://task.fanto.dev"
       },
       {
-        "title": "luciabot",
-        "desc": "Ein einfacher Chatbot, ein Erkundungsprojekt für Konversationsschnittstellen.",
-        "stack": "HTML, JavaScript"
+        "title": "Online Quiz mit ESP32",
+        "desc": "Entwicklung eines Online-Quiz, bei dem ein ESP32-Mikrocontroller als Buzzer genutzt wird. Dabei verwenden wir WebSocket sowie JavaScript, PHP und Redis für das Caching",
+        "stack": "JavaScript, PHP, Redis, Arduino",
+        "repo": "https://github.com/fanto237/multichoice-quiz",
+        "demo": ""
       },
       {
-        "title": "IT-Sicherheit",
-        "desc": "Projekte und Übungen zur IT-Sicherheit.",
-        "stack": "Python"
+        "title": "Online-Bibliothek",
+        "desc": "Entwicklung einer Webanwendung (Bibliothek) mit Hilfe von Java Server, Contexts and Dependency Injection, Hibernate und MySQL.",
+        "stack": "Java, Hibernate, MySQL",
+        "repo": "https://github.com/fanto237/subh",
+        "demo": ""
       }
     ]
   },
@@ -111,27 +150,25 @@
     "subtitle": "Hier sind die Technologien und Werkzeuge, die ich beherrsche und durch Ausbildung und Projekte erworben habe.",
     "categories": [
       {
-        "title": "Sprachen & Frameworks",
-        "skills": ["Python", "Java", "PHP", "JavaScript", "HTML5 & CSS3"]
+        "title": "Sprachen",
+        "skills": ["C#/.NET", "Javascript/TypeScript", "HTML5 & CSS3"]
       },
+      {
+        "title": "Frameworks",
+        "skills": ["React", "Vue.js", "Angular", "ASP.NET", "Blazor", "WPF"]
+      },
+      {
+        "title": "Datenbanken und Caching",
+        "skills": ["Redis", "PostgreSQL", "MySQL", "SQL Server"]
+      },
+      { "title": "Versionskontrolle", "skills": ["Git", "GitHub", "GitLab", "Azure DevOps"] },
       {
         "title": "KI & Machine Learning",
         "skills": ["LangChain", "GPT", "Scikit-learn", "TensorFlow", "PyTorch"]
       },
       {
-        "title": "Tools & DevOps",
-        "skills": ["Docker", "Git & GitHub", "GitLab", "LLMOps", "Jira"]
-      },
-      {
-        "title": "Zertifizierungen",
-        "skills": [
-          "Machine Learning Grundlagen",
-          "TensorFlow Grundkurs 2",
-          "Python für die Datenanalyse 1",
-          "Deep Learning: Grundlagen",
-          "ChatGPT Prompt Engineering",
-          "LangChain LLM Applications"
-        ]
+        "title": "CI/CD-Pipelines & DevOps",
+        "skills": ["Azure DevOps", "GitHub Actions", "Jenkins", "Docker"]
       },
       {
         "title": "Sprachen",
