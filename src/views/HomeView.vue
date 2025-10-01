@@ -16,7 +16,9 @@ useScrollAnimation()
         <h1>{{ $t('home.title') }}</h1>
         <h2>{{ $t('home.subtitle') }}</h2>
         <div class="hero-actions">
-          <router-link to="/projets" class="cta-primary">{{ $t('home.cta_projects') }}</router-link>
+          <router-link to="/projects" class="cta-primary">{{
+            $t('home.cta_projects')
+          }}</router-link>
           <router-link to="/contact" class="cta-secondary">{{
             $t('home.cta_contact')
           }}</router-link>
