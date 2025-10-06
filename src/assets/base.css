@@ -19,6 +19,23 @@
   --section-gap: 160px;
 }
 
+/* Dark mode color palette */
+:root.dark {
+  --color-background: #1d1d1f;
+  --color-background-soft: #2c2c2e;
+  --color-background-mute: #3a3a3c;
+
+  --color-border: #48484a;
+  --color-border-hover: #636366;
+
+  --color-heading: #f5f5f7;
+  --color-text: #f5f5f7;
+  --color-text-light: #e5e5e7;
+
+  --primary-color: #0a84ff;
+  --primary-color-dark: #409cff;
+}
+
 *,
 *::before,
 *::after {
