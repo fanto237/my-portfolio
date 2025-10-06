@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import logo from '@/assets/logo.png'
+import { useDarkMode } from '@/composables/useDarkMode'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { RouterLink, useRoute } from 'vue-router'
 
 const { locale, t } = useI18n()
+const { isDark, toggleDarkMode } = useDarkMode()
+
 const setLocale = (lang: string) => {
   locale.value = lang
 }
@@ -44,6 +47,9 @@ const closeMenu = () => (menuOpen.value = false)
         }}</RouterLink>
         <a href="/cv.pdf" target="_blank" @click="closeMenu">{{ t('header.cv') }}</a>
         <div class="actions-mobile">
+          <button class="theme-toggle" @click="toggleDarkMode">
+            <i :class="isDark ? 'pi pi-sun' : 'pi pi-moon'"></i>
+          </button>
           <div class="lang-switcher">
             <button @click="setLocale('en')" :class="{ active: locale === 'en' }">EN</button>
             <span class="separator">/</span>
@@ -52,6 +58,13 @@ const closeMenu = () => (menuOpen.value = false)
         </div>
       </nav>
       <div class="actions">
+        <button
+          class="theme-toggle"
+          @click="toggleDarkMode"
+          :title="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
+        >
+          <i :class="isDark ? 'pi pi-sun' : 'pi pi-moon'"></i>
+        </button>
         <div class="lang-switcher">
           <button @click="setLocale('en')" :class="{ active: locale === 'en' }">EN</button>
           <span class="separator">/</span>
@@ -81,6 +94,10 @@ const closeMenu = () => (menuOpen.value = false)
   transition: all 0.3s;
 }
 
+:root.dark .header {
+  background-color: rgba(29, 29, 31, 0.7);
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -104,6 +121,12 @@ const closeMenu = () => (menuOpen.value = false)
   margin-top: 0.7rem;
   filter: brightness(0) saturate(100%) invert(27%) sepia(89%) saturate(1773%) hue-rotate(204deg)
     brightness(97%) contrast(101%);
+  transition: filter 0.3s ease;
+}
+
+:root.dark .logo {
+  filter: brightness(0) saturate(100%) invert(64%) sepia(80%) saturate(3800%) hue-rotate(195deg)
+    brightness(103%) contrast(101%);
 }
 
 nav {
@@ -136,6 +159,35 @@ nav a.isActive {
 .actions {
   display: flex;
   align-items: center;
+  gap: 1rem;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(0, 113, 227, 0.1);
+  color: var(--primary-color);
+}
+
+.theme-toggle i {
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover i {
+  transform: rotate(15deg);
 }
 
 .lang-switcher {
