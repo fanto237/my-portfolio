@@ -1,6 +1,10 @@
 <script setup lang="ts">
+import { useDarkMode } from '@/composables/useDarkMode'
 import Footer from './components/AppFooter.vue'
 import Header from './components/AppHeader.vue'
+
+// Initialize dark mode
+useDarkMode()
 </script>
 
 <template>
