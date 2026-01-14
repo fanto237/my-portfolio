@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import photo from '@/assets/photo.png'
+import photo from '@/assets/photo.jpg'
 import { useScrollAnimation } from '@/composables/useScrollAnimation'
 useScrollAnimation()
 </script>
